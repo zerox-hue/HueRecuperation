@@ -8,7 +8,7 @@
 
 # ⚜️__Installation__
 
-* 1 - Télécharger le HueRécuperation.dll*
+*1 - Télécharger le HueRécuperation.dll*
 
 *2 - Mettre le fichier dans le dossier plugin de votre serveur *
 
