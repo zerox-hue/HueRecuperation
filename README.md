@@ -10,6 +10,6 @@
 
 *1 - Télécharger le HueRécuperation.dll*
 
-*2 - Mettre le fichier dans le dossier plugin de votre serveur *
+*2 - Mettre le fichier dans le dossier plugin de votre serveur*
 
 *3 - Lancer votre serveur et configurer le json puis relancez votre serveur !*
