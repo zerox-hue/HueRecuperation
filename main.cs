@@ -31,17 +31,6 @@ namespace HueRecuperation
         
         }
 
-        public  string Verbose = "#0FFF";
-        public  string Info = "#427B75";
-        public  string Success = "#85CCFA";
-        public  string Grey = "#ADADAD";
-        public  string Purple = "#DB4BD5";
-        public  string Error = "#DD004E";                                                                                                                                                                                                                                             
-        public  string Orange = "#F5A61F";
-        public  string Warning = "#FDAD16";
-
-
-
         public static Config config;
 
         public class Config
@@ -109,7 +98,7 @@ namespace HueRecuperation
         public void OnEnterPoints(Player player)
         {
 
-                UIPanel panel = new UIPanel($"<color={Error}>Hue Récuperation</color>", UIPanel.PanelType.Text);
+                UIPanel panel = new UIPanel($"<color=#bd2433>Hue Récuperation</color>", UIPanel.PanelType.Text);
 
                 CloseButton(player, panel);
 
@@ -153,7 +142,7 @@ namespace HueRecuperation
         public void FirstQuestion(Player player)
         {
 
-            UIPanel panel = new UIPanel($"<color={Error}>Question 1</color>", UIPanel.PanelType.Text);
+            UIPanel panel = new UIPanel($"<color=#bd2433>Question 1</color>", UIPanel.PanelType.Text);
 
             panel.SetText("Quel est la vitesse maximum en ville ?");
 
@@ -184,14 +173,14 @@ namespace HueRecuperation
         {
             player.Notify("Perdu", $"Tu as perdu {config.Price} €!" , NotificationManager.Type.Error);
 
-            EmbedDiscord($"{config.WebhookLogs}", "HueRécuperation", $"Le joueur {player.GetFullName()} a raté la récupération de son point de permis !", $"{Error}");
+            EmbedDiscord($"{config.WebhookLogs}", "HueRécuperation", $"Le joueur {player.GetFullName()} a raté la récupération de son point de permis !", $"#bd2433");
 
             player.character.Bank -= config.Price;
         }
 
         public void SecondQuestion(Player player)
         {
-            UIPanel panel = new UIPanel($"<color={Error}>Question 2</color>", UIPanel.PanelType.Text);
+            UIPanel panel = new UIPanel($"<color=#bd2433>Question 2</color>", UIPanel.PanelType.Text);
 
             panel.SetText("Par quelle côté as tu le droit de doubler sur autoroute ?");
 
@@ -214,7 +203,7 @@ namespace HueRecuperation
 
         public void ThirdQuestion(Player player)
         {
-            UIPanel panel = new UIPanel($"<color={Error}>Question 3</color>", UIPanel.PanelType.Text);
+            UIPanel panel = new UIPanel($"<color=#bd2433>Question 3</color>", UIPanel.PanelType.Text);
 
             panel.SetText("Quel gyrophare est prioritaire ?");
 
